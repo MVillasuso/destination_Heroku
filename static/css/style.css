@@ -22,20 +22,20 @@
     color:#9754a8;
   }
   
-  #showcase p{
+  #showcase h2{
     font-size:20px;
-    color:#000000;
+    color:black;
   }
   
   
   #section-a{
-    padding:20px;
+    padding:30px;
     background:#fbcdff;
     text-align:center;
   }
   
   #section-b{
-    padding:20px;
+    padding:30px;
     background:#f4f4f4;
     text-align:center;
   }
