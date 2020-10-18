@@ -7,10 +7,10 @@ app = Flask(__name__)
 def landing_page():
     return render_template('index.html')
 
-# primero deployamos con esto comentado
-#@app.route("/info")
-#def limit_page():
-#    return render_template('info.html')
+
+@app.route("/info")
+def limit_page():
+    return render_template('info.html')
 
 
 # configurar lo que va dentro de PORT es súper importante

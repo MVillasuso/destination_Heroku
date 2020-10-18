@@ -12,13 +12,13 @@
         <a href="https://devcenter.heroku.com/articles/limits">Enlace Heroku</a>
       </div>
       <section id="section-a">
-        <p><b>HTTP requests have an initial 30 second window</b> in which the web process must return response data (either the completed response or some amount of response data to indicate that the process is active). Processes that do not send response data within the initial 30-second window will see an H12 error in their logs.
+        <b>HTTP requests have an initial 30 second window</b> in which the web process must return response data (either the completed response or some amount of response data to indicate that the process is active). Processes that do not send response data within the initial 30-second window will see an H12 error in their logs.
   
           After the initial response, each byte sent from the server restarts a rolling 55 second window. A similar 55 second window is restarted for every byte sent from the client.
           
           If no data is received from the dyno within the 55 second window the connection is terminated and an H15 error is logged.
           
-          Similarly, if no data is received from the client within the 55 second window, the connection is terminated and an H28 error is logged.</p>
+          Similarly, if no data is received from the client within the 55 second window, the connection is terminated and an H28 error is logged.
       </section>
       <section id="section-b">
         Your slug size is displayed at the end of a successful compile after the Compressing message. The maximum allowed slug size (after compression) is 500 MB.
